@@ -5,5 +5,10 @@
         "overwrite": false,
         "html": false,
         "json": true
-    }
+    },
+    "screenshotsFolder": "report/",
+    "videosFolder": "report/",
+    "screenshotOnRunFailure": true,
+    "watchForFileChanges": false,
+    "baseUrl": "http://demo.automationtesting.in/"
 }
