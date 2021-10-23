@@ -19,6 +19,7 @@ jobs:
         with:
           browser: chrome
           run: |
+           yarn
            yarn cy:run:report
            yarn mocha:merge:json
            yarn mocha:merge:html
