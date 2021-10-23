@@ -1,0 +1,19 @@
+{
+    "name": "cypress_e2e",
+    "version": "1.0.0",
+    "main": "index.js",
+    "repository": "https://github.com/qaprisciladearaujo/cypress_e2e.git",
+    "author": "qaprisciladearaujo <qaprisciladearaujo@gmail.com>",
+    "license": "MIT",
+    "scripts": {
+        "cy:open": "npx cypress open",
+        "cy:run:report": "npx cypress run --reporter mochawesome",
+        "mocha:merge:json": "npx mochawesome-merge report/results/*.json -o report/merge/output.json",
+        "mocha:merge:html": "npx marge .\\report\\merge\\output.json"
+    },
+    "dependencies": {
+        "cypress": "^8.6.0",
+        "mochawesome": "^6.3.1",
+        "mochawesome-merge": "^4.2.0"
+    }
+}
